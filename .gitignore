@@ -1,0 +1,10 @@
+.nuxt
+.output
+node_modules
+.data
+.env
+.env.*
+!.env.example
+bun.lock
+.npm-cache
+

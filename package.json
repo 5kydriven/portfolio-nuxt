@@ -1,0 +1,22 @@
+{
+  "name": "personal-digital-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.104",
+    "@nuxt/content": "^3.13.0",
+    "@nuxt/ui": "^4.7.1",
+    "better-sqlite3": "^12.9.0",
+    "nuxt": "^4.4.2",
+    "vue": "^3.5.33",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {}
+}
