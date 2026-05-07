@@ -9,7 +9,7 @@ useSeoMeta({
 
 <template>
   <UContainer class="motion-fade-up grid gap-12 py-16 lg:grid-cols-[0.9fr_1.1fr]">
-    <div class="space-y-6">
+    <div class="min-w-0 space-y-6">
       <SectionHeader
         eyebrow="Contact"
         title="Let's build software that fits your needs."
@@ -24,14 +24,14 @@ useSeoMeta({
       </UCard>
     </div>
 
-    <div class="space-y-4">
+    <div class="min-w-0 space-y-4">
       <UCard
         v-for="link in contactLinks"
         :key="link.label"
         :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'p-5 sm:p-5' }"
       >
-        <div class="flex items-center justify-between gap-4">
-          <div class="flex min-w-0 items-center gap-4">
+        <div class="flex min-w-0 items-center justify-between gap-4">
+          <div class="flex min-w-0 flex-1 items-center gap-4">
             <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-slate-800">
               <UIcon :name="link.icon" class="size-5 text-orange-400" />
             </div>
@@ -45,6 +45,7 @@ useSeoMeta({
             icon="i-lucide-arrow-up-right"
             color="primary"
             variant="ghost"
+            class="shrink-0"
             :target="link.to.startsWith('http') || link.to.endsWith('.pdf') ? '_blank' : undefined"
             :aria-label="`Open ${link.label}`"
           />
