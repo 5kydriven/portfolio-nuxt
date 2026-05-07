@@ -1,9 +1,9 @@
 ---
 title: EON's SYSTEM
-description: A fullstack business system for authentication, dashboard reporting, sales, inventory, employee management, and POS workflows.
+description: Custom software that brings login, dashboard, sales, inventory, employee records, and POS features into one web app.
 date: 2024-04-14
 role: Fullstack Developer
-projectType: Business System
+projectType: Custom Software
 status: Primary case study
 timeline: April 14, 2024 - Present
 stack:
@@ -26,29 +26,29 @@ gallery:
   - /eons-employee.png
   - /eons-pos.png
 highlights:
-  - Connects multiple business workflows into one operational system.
-  - Includes authentication, dashboard reporting, inventory, sales, employee, and POS modules.
-  - Shows fullstack thinking across UI, data flow, and maintainable feature organization.
+  - Combines several daily shop tasks into one web-based system.
+  - Includes login, dashboard, sales, inventory, employee, and POS screens.
+  - Shows how I can turn a real set of requirements into working custom software.
 problem: >-
-  Small business workflows can become scattered across manual records, separate tools, and repeated admin steps. This project explores how those workflows can be brought into one system with clearer screens and reusable modules.
+  A small operation can become hard to manage when sales, stock, staff details, and daily records are handled in separate places. This project shows how those tasks can be organized inside one clear web app.
 architecture: >-
-  The system is organized around business modules so each workflow can be understood and maintained separately. TODO: Add how the data layer, API routes, Firebase collections, and UI components are structured for maintainability and scalability.
+  The app is built around separate feature areas so each part of the system is easier to understand and improve. The interface uses reusable Vue and PrimeVue components, while Firebase supports the app data needed by the different screens.
 features:
-  - Authentication flow for controlled system access.
-  - Dashboard screens for business reporting and quick operational visibility.
-  - Sales, inventory, employee, and POS workflows for daily business operations.
-  - UI built with reusable Vue and PrimeVue components.
-  - 'TODO: Add the specific business rules, roles, or permissions implemented.'
+  - Login screen for controlled access to the system.
+  - Dashboard for a quick view of important activity.
+  - Sales and POS screens for daily transaction work.
+  - Inventory screens for tracking products and stock.
+  - Employee screens for managing staff-related records.
 learned: >-
-  This project strengthened my ability to connect UI decisions with business workflows, data structure, and long-term maintainability. TODO: Add the hardest technical problem you solved.
+  This project helped me connect user screens, backend data, and daily work processes into one complete software experience.
 outcome: >-
-  TODO: Add measurable result, user count, deployment detail, client feedback, or business impact.
+  The project became a strong portfolio case study and live demo that shows my ability to build custom web software from a larger set of requirements.
 ---
 
 ## Case Study Notes
 
-TODO: Add what you personally owned in this project.
+EON's SYSTEM is an example of building software around a specific need instead of starting from a template. The goal was to make common shop tasks easier to access from one place.
 
-TODO: Add the main architectural decision you are most proud of.
+The strongest part of the project is the way the screens are separated by task. Login, dashboard, sales, inventory, employee records, and POS features each have their own area, which makes the app easier to review and improve over time.
 
-TODO: Add a short before-and-after story showing how this system improved a workflow.
+If I continue improving this project, I would focus on stronger role permissions, clearer reporting, better data validation, and a smoother flow between sales and inventory updates.

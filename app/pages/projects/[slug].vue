@@ -17,7 +17,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UContainer v-if="project" class="py-12 sm:py-16">
+  <UContainer v-if="project" class="motion-fade-up py-12 sm:py-16">
     <div class="mx-auto max-w-5xl space-y-10">
       <div class="space-y-7">
         <UButton to="/projects" label="Back to projects" icon="i-lucide-arrow-left" color="primary" variant="ghost" />
@@ -37,15 +37,15 @@ useSeoMeta({
           </div>
 
           <div class="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
-            <div class="rounded-lg border border-slate-800 bg-slate-900/55 p-4">
+            <div class="motion-card rounded-lg border border-slate-800 bg-slate-900/55 p-4">
               <p class="text-sm text-slate-500">Role</p>
               <p class="mt-1 font-medium text-slate-200">{{ project.role }}</p>
             </div>
-            <div v-if="project.timeline" class="rounded-lg border border-slate-800 bg-slate-900/55 p-4">
+            <div v-if="project.timeline" class="motion-card rounded-lg border border-slate-800 bg-slate-900/55 p-4">
               <p class="text-sm text-slate-500">Timeline</p>
               <p class="mt-1 font-medium text-slate-200">{{ project.timeline }}</p>
             </div>
-            <div v-if="project.status" class="rounded-lg border border-slate-800 bg-slate-900/55 p-4">
+            <div v-if="project.status" class="motion-card rounded-lg border border-slate-800 bg-slate-900/55 p-4">
               <p class="text-sm text-slate-500">Status</p>
               <p class="mt-1 font-medium text-slate-200">{{ project.status }}</p>
             </div>
@@ -78,19 +78,19 @@ useSeoMeta({
       </div>
 
       <div class="grid gap-5 lg:grid-cols-2">
-        <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
+        <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
           <p class="text-sm font-medium text-orange-400">Problem</p>
           <p class="leading-7 text-slate-300">{{ project.problem }}</p>
         </UCard>
 
-        <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
-          <p class="text-sm font-medium text-orange-400">Architecture / Maintainability</p>
+        <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
+          <p class="text-sm font-medium text-orange-400">Build approach</p>
           <p class="leading-7 text-slate-300">{{ project.architecture }}</p>
         </UCard>
       </div>
 
       <div class="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
-        <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-5 p-5 sm:p-6' }">
+        <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-5 p-5 sm:p-6' }">
           <div>
             <p class="text-sm font-medium text-orange-400">Key features</p>
             <h2 class="mt-2 text-2xl font-semibold text-slate-50">What this project shows</h2>
@@ -108,35 +108,35 @@ useSeoMeta({
         </UCard>
 
         <div class="space-y-5">
-          <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
+          <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
             <p class="text-sm font-medium text-orange-400">What I learned</p>
             <p class="leading-7 text-slate-300">{{ project.learned }}</p>
           </UCard>
 
-          <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
+          <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
             <p class="text-sm font-medium text-orange-400">Outcome</p>
             <p class="leading-7 text-slate-300">{{ project.outcome }}</p>
           </UCard>
         </div>
       </div>
 
-      <section v-if="project.gallery?.length" class="space-y-5">
+      <section v-if="project.gallery?.length" class="motion-fade-up motion-delay-1 space-y-5">
         <SectionHeader
           eyebrow="Screenshots"
-          title="Screens and flows"
-          description="Consistent screenshots of the main interface states and user workflows."
+          title="Screens and features"
+          description="Screenshots of the main pages, features, and user actions."
         />
 
         <div class="grid gap-4 md:grid-cols-2">
           <figure
             v-for="(image, index) in project.gallery"
             :key="image"
-            class="overflow-hidden rounded-lg border border-slate-800 bg-slate-900/55"
+            class="motion-card overflow-hidden rounded-lg border border-slate-800 bg-slate-900/55"
           >
             <img
               :src="image"
               :alt="`${project.title} screenshot ${index + 1}`"
-              class="aspect-[16/10] w-full object-cover"
+              class="motion-framed-image aspect-[16/10] w-full object-cover"
             >
             <figcaption class="border-t border-slate-800 px-4 py-3 text-sm text-slate-500">
               Screenshot {{ index + 1 }}
@@ -145,13 +145,13 @@ useSeoMeta({
         </div>
       </section>
 
-      <section class="space-y-5">
+      <section class="motion-fade-up motion-delay-2 space-y-5">
         <SectionHeader
           eyebrow="Notes"
           title="Additional writeup"
-          description="Editable Markdown content for extra details and future case-study improvements."
+          description="Extra context about the project, what it includes, and what it helped me practice."
         />
-        <div class="prose prose-invert max-w-none rounded-lg border border-slate-800 bg-slate-900/55 p-5 sm:p-6">
+        <div class="motion-card prose prose-invert max-w-none rounded-lg border border-slate-800 bg-slate-900/55 p-5 sm:p-6">
           <ContentRenderer :value="project" />
         </div>
       </section>

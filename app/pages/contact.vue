@@ -3,23 +3,23 @@ import { contactLinks, profile } from '~/data/profile'
 
 useSeoMeta({
   title: 'Contact',
-  description: `Contact ${profile.name} for software engineering, fullstack systems, and automation work.`
+  description: `Contact ${profile.name} for custom software, websites, web apps, mobile apps, and backend work.`
 })
 </script>
 
 <template>
-  <UContainer class="grid gap-12 py-16 lg:grid-cols-[0.9fr_1.1fr]">
+  <UContainer class="motion-fade-up grid gap-12 py-16 lg:grid-cols-[0.9fr_1.1fr]">
     <div class="space-y-6">
       <SectionHeader
         eyebrow="Contact"
-        title="Let's build something maintainable."
-        description="Reach out for software engineering work, business systems, dashboards, automation tools, or fullstack applications."
+        title="Let's build software that fits your needs."
+        description="Reach out for custom software, websites, web apps, mobile apps, admin tools, dashboards, or backend and database work."
       />
 
-      <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
+      <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-3 p-5 sm:p-6' }">
         <p class="text-sm font-medium text-orange-400">Best fit</p>
         <p class="leading-7 text-slate-300">
-          Business problems that need clear interfaces, scalable structure, maintainable code, and practical automation.
+          Clients who need a practical app, clear screens, reliable data, and software built around their actual process.
         </p>
       </UCard>
     </div>
@@ -28,7 +28,7 @@ useSeoMeta({
       <UCard
         v-for="link in contactLinks"
         :key="link.label"
-        :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'p-5 sm:p-5' }"
+        :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'p-5 sm:p-5' }"
       >
         <div class="flex items-center justify-between gap-4">
           <div class="flex min-w-0 items-center gap-4">
@@ -52,7 +52,7 @@ useSeoMeta({
       </UCard>
 
       <div class="pt-4">
-        <p class="mb-3 text-sm font-medium text-slate-500">Secondary profiles</p>
+        <p class="mb-3 text-sm font-medium text-slate-500">Other profiles</p>
         <div class="flex flex-wrap gap-3">
           <UButton
             v-for="link in profile.secondarySocials"

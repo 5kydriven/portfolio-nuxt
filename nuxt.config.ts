@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxt/content'],
   css: ['~/assets/css/main.css'],
   app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    },
     head: {
       titleTemplate: '%s | Digital Portfolio',
       htmlAttrs: {
@@ -20,7 +24,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Mhel Angelo is a Fullstack Developer based in the Philippines.'
+          content: 'Mhel Angelo builds custom software, websites, web apps, mobile apps, and practical tools.'
         }
       ]
     }

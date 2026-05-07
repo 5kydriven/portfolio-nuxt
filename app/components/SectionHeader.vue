@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="max-w-2xl space-y-3">
+  <div class="motion-fade-up max-w-2xl space-y-3">
     <p v-if="eyebrow" class="text-sm font-medium text-orange-400">
       {{ eyebrow }}
     </p>

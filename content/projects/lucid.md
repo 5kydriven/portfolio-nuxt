@@ -1,6 +1,6 @@
 ---
 title: Lucid
-description: A PHP-based social application with sign-in, profile, editing, sharing, and comment workflows.
+description: A PHP-based social web app with sign-in, profile editing, posting, sharing, and comment features.
 date: 2023-08-01
 role: Developer
 projectType: Web Application
@@ -21,26 +21,26 @@ gallery:
   - /lucid-user.jpg
   - /lucid-profile.jpg
 highlights:
-  - Multi-page account and profile workflow.
-  - Post sharing and comment interactions.
+  - Includes account, profile, posting, sharing, and comment flows.
+  - Helped me practice building a multi-page web application with user actions.
 problem: >-
-  Social-style applications require clear account states, profile screens, content actions, and feedback loops. This project was built to practice those workflows in a PHP application.
+  Social-style apps need clear account pages, profile states, content actions, and feedback from other users. This project was built to practice those common web app features with PHP.
 architecture: >-
-  TODO: Add how pages, shared PHP includes, data access, and reusable UI pieces were organized to keep the project maintainable.
+  The project uses separate PHP pages for different user actions and keeps the experience organized around sign-in, profile management, posting, sharing, and comments.
 features:
   - Sign-in screen and user account flow.
   - Profile and user page views.
   - Edit account and profile interactions.
   - Post sharing and comment workflows.
-  - 'TODO: Add database tables, validation rules, or session handling details.'
+  - Frontend interactions using JavaScript and CSS.
 learned: >-
-  This project helped me understand multi-page application flow, user state, and how backend-rendered screens connect with frontend interactions.
+  This project helped me understand how multi-page applications handle user state, page navigation, and backend-rendered screens.
 outcome: >-
-  TODO: Add what this project proved, what you would improve, or what feedback you received.
+  Lucid shows my early web development foundation and gives a clear example of working with user-focused features in a PHP project.
 ---
 
 ## Case Study Notes
 
-TODO: Add what you personally owned in this project.
+Lucid was built as a practical exercise in user accounts and social app behavior. It helped me practice how one user action can affect several parts of an app, such as profiles, posts, comments, and shared content.
 
-TODO: Add what you would refactor if you rebuilt this with a modern stack.
+If I rebuilt this with a modern stack, I would improve the folder structure, add stronger validation, and separate the data access logic more clearly from the page templates.

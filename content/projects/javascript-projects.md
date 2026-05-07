@@ -1,6 +1,6 @@
 ---
 title: JavaScript Projects
-description: A collection of frontend practice projects focused on browser interaction, layout, and JavaScript fundamentals.
+description: A collection of small frontend projects built to practice browser interaction, layouts, and JavaScript fundamentals.
 date: 2023-07-01
 role: Frontend Developer
 projectType: Frontend
@@ -21,22 +21,22 @@ highlights:
   - Shows DOM interaction and JavaScript fundamentals.
   - Published as a live demo for quick review.
 problem: >-
-  Frontend fundamentals are easiest to strengthen through small focused builds that isolate interaction, layout, and browser behavior.
+  Frontend skills improve fastest through small builds that focus on layout, interaction, and browser behavior one feature at a time.
 architecture: >-
-  The collection should stay simple and easy to extend by separating each mini-project into its own folder or module. TODO: Add how the individual projects are organized.
+  The collection is kept simple so each mini-project can focus on one interaction or UI idea without adding unnecessary complexity.
 features:
   - Browser-based interactions using JavaScript.
   - HTML and CSS layouts for small UI exercises.
   - Live deployment for easy access and review.
-  - 'TODO: Add the strongest mini-projects in this collection.'
+  - Practice projects focused on strengthening frontend fundamentals.
 learned: >-
-  This project reinforced JavaScript fundamentals, DOM behavior, and the value of shipping small experiments instead of only keeping them local.
+  This collection reinforced JavaScript basics, DOM behavior, and the value of publishing small projects so they can be reviewed easily.
 outcome: >-
-  TODO: Add which mini-projects best show your frontend growth.
+  The project shows my frontend practice foundation and gives visitors a quick way to review earlier JavaScript work.
 ---
 
 ## Case Study Notes
 
-TODO: Add a short list of the included JavaScript exercises.
+This collection is focused on frontend fundamentals. It helped me practice how the browser responds to user actions, how layouts behave, and how small interactive features are built with HTML, CSS, and JavaScript.
 
-TODO: Add which interaction was hardest to implement.
+The most useful part of this project was building and publishing small exercises instead of only studying concepts without shipping anything.

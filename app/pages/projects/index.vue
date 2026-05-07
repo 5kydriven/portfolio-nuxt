@@ -5,16 +5,16 @@ const { data: projects } = await useAsyncData('projects', () =>
 
 useSeoMeta({
   title: 'Projects',
-  description: 'Business systems, fullstack apps, and practical web projects by Mhel Angelo.'
+  description: 'Custom software, web apps, mobile apps, and practical development projects by Mhel Angelo.'
 })
 </script>
 
 <template>
-  <UContainer class="space-y-10 py-16">
+  <UContainer class="motion-fade-up space-y-10 py-16">
     <SectionHeader
       eyebrow="Work"
       title="Projects"
-      description="Projects focused on business workflows, maintainable structure, practical UI, deployment, and fullstack problem solving."
+      description="Projects focused on turning requirements into practical websites, apps, dashboards, and backend-powered tools."
     />
 
     <div class="grid gap-5 md:grid-cols-2">

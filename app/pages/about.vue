@@ -9,7 +9,7 @@
 
 <template>
 	<UContainer
-		class="grid gap-12 py-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+		class="motion-fade-up grid gap-12 py-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
 		<div class="space-y-6">
 			<SectionHeader
 				eyebrow="About"
@@ -18,7 +18,7 @@
 			<img
 				:src="profile.aboutImage"
 				:alt="profile.name"
-				class="aspect-square w-full max-w-sm rounded-lg border border-slate-800 object-cover" />
+				class="motion-framed-image aspect-square w-full max-w-sm rounded-lg border border-slate-800 object-cover" />
 			<div class="flex flex-wrap gap-3">
 				<UButton
 					:to="profile.resumePath"
@@ -37,7 +37,7 @@
 		<div class="space-y-4">
 			<UCard
 				:ui="{
-					root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
+					root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
 					body: 'space-y-4 p-6 sm:p-6',
 				}">
 				<div class="flex items-center gap-3">
@@ -63,7 +63,7 @@
 				v-for="item in profile.about.details"
 				:key="item.label"
 				:ui="{
-					root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
+					root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
 					body: 'p-6 sm:p-6',
 				}">
 				<div class="grid gap-2 sm:grid-cols-[10rem_1fr]">
@@ -74,7 +74,7 @@
 
 			<UCard
 				:ui="{
-					root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
+					root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
 					body: 'space-y-5 p-6 sm:p-6',
 				}">
 				<div>
@@ -82,7 +82,7 @@
 						{{ profile.architecture.title }}
 					</p>
 					<h2 class="mt-2 text-2xl font-semibold text-slate-50">
-						Maintainable and scalable by default
+						Clear software for real needs
 					</h2>
 				</div>
 				<p class="leading-7 text-slate-400">
@@ -92,14 +92,14 @@
 
 			<UCard
 				:ui="{
-					root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
+					root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
 					body: 'p-6 sm:p-6',
 				}">
 				<div class="space-y-5">
 					<div>
-						<p class="text-sm font-medium text-orange-400">Timeline</p>
+						<p class="text-sm font-medium text-orange-400">Work Experience</p>
 						<h2 class="mt-2 text-2xl font-semibold text-slate-50">
-							Current direction
+							2+ years building software
 						</h2>
 					</div>
 					<div class="space-y-4">

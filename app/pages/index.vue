@@ -25,7 +25,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <section class="border-b border-slate-800">
+    <section class="motion-fade-up border-b border-slate-800">
       <UContainer class="grid min-h-[calc(100svh-4rem)] gap-8 py-10 sm:py-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-16">
         <div class="space-y-7">
           <div>
@@ -51,7 +51,7 @@ useSeoMeta({
             <div
               v-for="point in profile.proofPoints"
               :key="point.label"
-              class="flex items-center gap-3 rounded-lg border border-slate-800 bg-slate-900/55 px-4 py-3"
+              class="motion-card flex items-center gap-3 rounded-lg border border-slate-800 bg-slate-900/55 px-4 py-3"
             >
               <UIcon :name="point.icon" class="size-5 shrink-0 text-orange-400" />
               <span class="text-sm font-medium text-slate-200">{{ point.label }}</span>
@@ -59,11 +59,11 @@ useSeoMeta({
           </div>
         </div>
 
-        <div class="rounded-lg border border-slate-800 bg-slate-900/55 p-5 sm:p-6">
+        <div class="motion-card rounded-lg border border-slate-800 bg-slate-900/55 p-5 sm:p-6">
           <div class="space-y-4">
             <p class="text-sm font-medium text-orange-400">{{ profile.architecture.title }}</p>
             <p class="text-xl font-semibold leading-8 text-slate-50">
-              Built for maintainability, not just the first demo.
+              Planned clearly, built practically, and ready to improve.
             </p>
             <p class="leading-7 text-slate-400">
               {{ profile.architecture.description }}
@@ -73,7 +73,7 @@ useSeoMeta({
       </UContainer>
     </section>
 
-    <section class="border-b border-slate-800 py-16">
+    <section class="motion-fade-up motion-delay-1 border-b border-slate-800 py-16">
       <UContainer class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <div class="space-y-6">
           <SectionHeader
@@ -87,24 +87,24 @@ useSeoMeta({
         <img
           :src="profile.aboutImage"
           :alt="`${profile.name} profile`"
-          class="aspect-4/3 w-full rounded-lg border border-slate-800 object-cover"
+          class="motion-framed-image aspect-4/3 w-full rounded-lg border border-slate-800 object-cover"
         >
       </UContainer>
     </section>
 
-    <section class="border-b border-slate-800 py-16">
+    <section class="motion-fade-up motion-delay-1 border-b border-slate-800 py-16">
       <UContainer class="space-y-8">
         <SectionHeader
           eyebrow="Skills"
           title="Stack and engineering focus"
-          description="Grouped by how I use the tools: building, structuring, shipping, and maintaining business systems."
+          description="Grouped by the kind of software I can help build: websites, web apps, mobile apps, backend features, and client tools."
         />
 
         <div class="grid gap-4 md:grid-cols-2">
           <UCard
             v-for="group in profile.skillGroups"
             :key="group.title"
-            :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-5 p-5 sm:p-6' }"
+            :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-5 p-5 sm:p-6' }"
           >
             <div class="flex items-center gap-3">
               <div class="flex size-10 items-center justify-center rounded-lg bg-slate-800">
@@ -127,7 +127,7 @@ useSeoMeta({
       </UContainer>
     </section>
 
-    <section v-if="featuredProject" class="border-b border-slate-800 py-16">
+    <section v-if="featuredProject" class="motion-fade-up motion-delay-2 border-b border-slate-800 py-16">
       <UContainer class="space-y-8">
         <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader
@@ -139,9 +139,9 @@ useSeoMeta({
         </div>
 
         <div class="grid gap-5 lg:grid-cols-[0.85fr_1.15fr]">
-          <UCard :ui="{ root: 'rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-5 p-5 sm:p-6' }">
+          <UCard :ui="{ root: 'motion-card rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0', body: 'space-y-5 p-5 sm:p-6' }">
             <div>
-              <p class="text-sm font-medium text-slate-500">Architecture focus</p>
+              <p class="text-sm font-medium text-slate-500">Build approach</p>
               <p class="mt-2 leading-7 text-slate-300">
                 {{ featuredProject.architecture }}
               </p>
@@ -150,7 +150,7 @@ useSeoMeta({
               <div
                 v-for="item in featuredProject.highlights"
                 :key="item"
-                class="flex gap-3 rounded-lg border border-slate-800 bg-slate-950/50 p-3"
+                class="motion-card flex gap-3 rounded-lg border border-slate-800 bg-slate-950/50 p-3"
               >
                 <UIcon name="i-lucide-check-circle-2" class="mt-0.5 size-5 shrink-0 text-orange-400" />
                 <span class="text-sm leading-6 text-slate-300">{{ item }}</span>
@@ -159,20 +159,20 @@ useSeoMeta({
           </UCard>
 
           <div class="grid gap-4 sm:grid-cols-2">
-            <img src="/eons-dashboard.png" alt="EON's dashboard" class="aspect-[16/10] rounded-lg border border-slate-800 object-cover">
-            <img src="/eons-pos.png" alt="EON's POS" class="aspect-[16/10] rounded-lg border border-slate-800 object-cover">
+            <img src="/eons-dashboard.png" alt="EON's dashboard" class="motion-framed-image aspect-[16/10] rounded-lg border border-slate-800 object-cover">
+            <img src="/eons-pos.png" alt="EON's POS" class="motion-framed-image aspect-[16/10] rounded-lg border border-slate-800 object-cover">
           </div>
         </div>
       </UContainer>
     </section>
 
-    <section class="py-16">
+    <section class="motion-fade-up motion-delay-2 py-16">
       <UContainer class="space-y-8">
         <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader
             eyebrow="More work"
             title="Other projects"
-            description="Smaller projects that show frontend practice, PHP workflows, deployment, and UI fundamentals."
+            description="Projects that show web development, backend practice, deployment, and interface work across different needs."
           />
           <UButton to="/projects" label="All projects" color="primary" variant="ghost" icon="i-lucide-arrow-right" trailing />
         </div>
@@ -187,13 +187,13 @@ useSeoMeta({
       </UContainer>
     </section>
 
-    <section class="border-t border-slate-800 py-16 text-center">
+    <section class="motion-fade-up motion-delay-3 border-t border-slate-800 py-16 text-center">
       <UContainer class="space-y-5">
         <h2 class="text-3xl font-semibold text-slate-50">
-          Build something maintainable
+          Build custom software that fits your needs
         </h2>
         <p class="mx-auto max-w-xl leading-7 text-slate-400">
-          Reach out for software engineering work, practical business tools, fullstack systems, or automation-focused projects.
+          Reach out for websites, web apps, mobile apps, admin tools, dashboards, backend features, or custom software projects.
         </p>
         <div class="flex justify-center gap-3">
           <UButton

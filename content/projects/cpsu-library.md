@@ -1,6 +1,6 @@
 ---
 title: CPSU Library
-description: A migrated library web project presented with a live deployment and a cleaner portfolio writeup.
+description: A library website project migrated and presented as a live web experience for easier public review.
 date: 2023-06-01
 role: Developer
 projectType: Web Application
@@ -18,25 +18,25 @@ cover: /library.png
 gallery:
   - /library.png
 highlights:
-  - Library-oriented interface and content structure.
-  - Deployed as a public live demo.
+  - Presents library information through a simple web interface.
+  - Deployed as a public live demo for easy access.
 problem: >-
-  Library experiences need clear navigation and accessible presentation so users can find information quickly.
+  A library website should make information easy to find and easy to review online. This project focused on presenting an earlier library concept as a cleaner deployed web experience.
 architecture: >-
-  TODO: Add how content, routes, or UI sections were structured for maintainability.
+  The project keeps the structure simple, with pages and sections focused on presenting library content clearly for visitors.
 features:
   - Library-oriented web interface.
   - Public deployment workflow.
-  - Portfolio-ready presentation of an earlier project.
-  - 'TODO: Add the core library features and user actions.'
+  - Clean presentation of an earlier project.
+  - Basic page structure for browsing library information.
 learned: >-
-  This project helped build confidence with deployment, project migration, and presenting a complete web experience.
+  This project helped build confidence with migration, deployment, and presenting a complete web project online.
 outcome: >-
-  TODO: Add migration result, deployment details, or what improved compared with the original version.
+  The migrated version made the project easier to access, review, and include as part of my development portfolio.
 ---
 
 ## Case Study Notes
 
-TODO: Add what the original project looked like before migration.
+CPSU Library represents one of my earlier web projects and helped me practice turning a school-related idea into something that can be viewed online.
 
-TODO: Add what you improved during the migration.
+The main improvement was making the project easier to present as a live demo instead of keeping it only as a local or unfinished file-based project.

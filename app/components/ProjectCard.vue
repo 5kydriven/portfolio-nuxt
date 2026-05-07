@@ -19,9 +19,9 @@ defineProps<{
 
 <template>
   <UCard
-    class="h-full"
+    class="motion-fade-up h-full"
     :ui="{
-      root: 'overflow-hidden rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0 transition hover:border-orange-500/60',
+      root: 'motion-card overflow-hidden rounded-lg border border-slate-800 bg-slate-900/55 shadow-none ring-0',
       body: 'p-0 sm:p-0'
     }"
   >
@@ -30,7 +30,7 @@ defineProps<{
         v-if="project.cover"
         :src="project.cover"
         :alt="project.title"
-        class="aspect-[16/10] w-full border-b border-slate-800 object-cover"
+        class="motion-framed-image aspect-[16/10] w-full border-b border-slate-800 object-cover"
       >
 
       <div class="flex flex-1 flex-col">
